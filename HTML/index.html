@@ -10,10 +10,11 @@
     <meta name="author" content="joe amerson">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"
     <!-- meta this tag defines info. about the file -->
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
 
     <title>my fweb</title>
   </head>
-  <body style="background-color: lightblue;">
+  <body >
     <!-- the body of the web
     here almost ever thing will ganna show up -->
     <header style="background-color: lightgreen;">
@@ -62,12 +63,51 @@
                and we can mix between them -->
            <p style="color:red; background-color: blue;"> here we can style add some color ...</p>
            <!-- if we add any style to the body tage that will apply to all tages in body -->
+           <pre>
+ this pre tag:                   this pre tag:
+   good                        bad
+     awesome               so bad
+       excellent         suck
+                the bast
+
+           </pre>
+           <p>Here is a quote from WWF's website: big quote </p>
+            <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            For 50 years, WWF has been protecting the future of nature.
+            The world's leading conservation organization,
+            WWF works in 100 countries and is supported by
+            1.2 million members in the United States and
+            close to 5 million globally.
+            </blockquote>
+            <p>WWF's goal is to: small quote ::
+              <q>Build a future where people live in harmony with nature.</q>
+            </p>
+            <p>for Abbreviations ::The
+              <abbr title="World Health Organization">WHO</abbr>
+              was founded in 1948.
+            </p>
+            <bdo dir="rtl" style="color:red;">This text will be written from right to left</bdo>
+            <!--is used to override the current text direction: -->
+
+
 
         </section>
         <aside id="aside">
           <h4>the side</h4>
           <p>here is the side of page where we can put ads </p>
           <video src="cat.mp4" controls poster="https://www.pethealthnetwork.com/sites/default/files/how-do-i-trim-my-kittens-nails524581937.jpg" width="300" autoplay loop >this is the video of cut cat</video>
+          <h2>Image Maps</h2>
+            <p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+
+            <img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+            <map name="workmap">
+              <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.w3schools.com/html/computer.htm">
+              <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.w3schools.com/html/phone.htm">
+              <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://www.w3schools.com/html/coffee.htm">
+            </map>
+            <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+
         </aside>
 
       </article>
@@ -204,9 +244,17 @@
           the form data will include the line: indoor-outdoor=indoor.
            This is from the name and value attributes of the "indoor" input.
            if not will be like this indoor-outdoor=on or off-->
+           <br/>
+           <label for="cars">Choose a car:</label>
+           <select id="cars" name="cars">
+             <option value="volvo">Volvo</option>
+             <option value="saab">Saab</option>
+             <option value="fiat">Fiat</option>
+             <option value="audi">Audi</option>
 
           <br/>
           <input type="radio" name="test-name" checked>
+          <br/>
          <input type="submit" />
           <button type="submit">make new account</button>
 
@@ -220,8 +268,17 @@
 
 
 
-    <footer>
-        </footer>
+    <footer style="background-color:lightgreen;">
+      <p>the address for Contact Information</p>
+      <address>
+      Written by Joe Amerson.<br>
+      Visit us at:....<br>
+      Example.com<br>
+      Box 564, Disneyland<br>
+      USA
+     </address>
+
+    </footer>
 
 
   </body>
