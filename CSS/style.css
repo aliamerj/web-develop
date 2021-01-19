@@ -1,3 +1,16 @@
 body {
   background: lightblue;
 }
+header {
+  background: lightgreen;
+}
+.title {
+  color: red ;
+}
+
+.contain {
+  background: #ffffb9
+}
+#aside {
+  background: #5F9EA0;
+}
